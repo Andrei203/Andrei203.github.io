@@ -16,8 +16,10 @@ background: #9d8df1;
 position: fixed;
 width: 100%;
 font-family: 'Roboto', sans-serif;
-padding: 15px 0;
+padding: 30px 0;
+transition: all 0.3s ease;
 }
+
 .navbar .max-width
 {
     display: flex;
@@ -41,6 +43,19 @@ font-weight: 600;
     font-size:  18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover
+{
+    color: #94E8B4;
+}
+
+/* menu btn styling */
+.menu-btn
+{
+color: #fff;
+font-size: 23px;
+cursor : pointer;
 }
 /* home section styling */
 .home
