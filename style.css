@@ -109,6 +109,23 @@ margin: auto 0 auto 40px;
     color: #9d8df1;
     font-weight: 500;
 }
+.home .home-content a{
+    display : inline-block;
+    background :  #9d8df1;
+    color: #000000;
+    font-size: 25px;
+    padding: 12px 36px; 
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #9d8df1;
+    transition: all 0.4s ease;
+}
+.home .home-content a:hover
+{
+    color: #94E8B4;
+    background:none;
+}
+
 @media (max-width: 1104px)
 {
     .home .max-width{
@@ -164,11 +181,58 @@ margin: auto 0 auto 40px;
         margin: 20px 0;
         font-size: 25px;
     }
+    .home .home-content .text-2
+    {
+        font-size: 70px;
+       
+        
+    }
+    .home .home-content .text-3
+    {
+        font-size: 35px;
+      
+    }
+    .home .home-content a
+    {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
 
 }
-@media (max-width: 991px)
+@media (max-width: 690px)
 {
     .max-width{
-        padding: 0 50px;
+        padding: 0  23px;
+    }
+    .home .home-content .text-2
+    {
+        font-size: 60px;
+        font-weight: 450;
+        
+    }
+    .home .home-content .text-3
+    {
+        font-size: 32px;
+        margin: 5px 0;
+    }
+    .home .home-content a
+    {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 500px)
+{
+  
+    .home .home-content .text-2
+    {
+        font-size: 50px;
+        font-weight: 450;
+        
+    }
+    .home .home-content .text-3
+    {
+        font-size: 27px;
+        margin: 5px 0;
     }
 }
