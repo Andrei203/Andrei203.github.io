@@ -14,6 +14,7 @@
 .navbar{
 position: fixed;
 width: 100%;
+z-index: 999;
 font-family: 'Roboto', sans-serif;
 padding: 30px 0;
 transition: all 0.3s ease;
@@ -22,7 +23,7 @@ transition: all 0.3s ease;
 .navbar.sticky
 {
 padding: 15px 0;
-background : #9d8df1;
+background : #F9F9F9;
 }
 
 .navbar .max-width
@@ -39,15 +40,16 @@ background : #9d8df1;
 }
 .navbar .menu li a
 {
-    color : #fff;
+    color : #9d8df1;
     font-size:  18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+/*39:29 */
 .navbar .logo a
 {
-      color: #fff;
+      color:  #9d8df1;
 font-size: 35px;
 font-weight: 600;
 }
@@ -55,15 +57,7 @@ font-weight: 600;
 {
     color: #94E8B4;
 }
-.navbar .logo a span
-{
-    color: #94E8B4;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span
-{   
-    color : #fff;
-}
+
 /* menu btn styling */
 .menu-btn
 {
@@ -124,6 +118,54 @@ margin: auto 0 auto 40px;
 {
     color: #94E8B4;
     background:none;
+}
+/*about section */
+section{
+    padding: 100px 0;
+}
+.about
+{
+font-family: 'Roboto', sans-serif;
+background: #F9F9F9
+}
+.about .title::before
+{
+content: "";
+position: absolute;
+width : 180px;
+bottom: 0px;
+left: 50%;
+height: 3px;
+background: #111;
+transform: translateX(-50%);
+}
+.about .title::after
+{
+content: "Information about me!";
+position: absolute;
+bottom: -35px;
+left: 50%;
+padding: 5px;
+color: #9d8df1;
+font-size: 20px;
+background: #F9F9F9;
+transform: translateX(-50%);
+}
+.about .title
+{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight : 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .about-content .left img
+{ 
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border: 5px solid #9d8df1;
+    border-radius: 6px;
 }
 
 @media (max-width: 1104px)
@@ -218,9 +260,10 @@ margin: auto 0 auto 40px;
     .home .home-content a
     {
         font-size: 20px;
-        padding: 10px 30px;
+        padding: 8px 20px;
     }
 }
+
 @media (max-width: 500px)
 {
   
