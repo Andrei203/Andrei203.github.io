@@ -116,7 +116,7 @@ margin: auto 0 auto 40px;
 }
 .home .home-content a:hover
 {
-    color: #94E8B4;
+    color: #9d8df1;
     background:none;
 }
 /*about section */
@@ -127,6 +127,16 @@ section{
 {
 font-family: 'Roboto', sans-serif;
 background: #F9F9F9
+}
+.about .title
+{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight : 400;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .about .title::before
 {
@@ -139,6 +149,7 @@ height: 3px;
 background: #111;
 transform: translateX(-50%);
 }
+
 .about .title::after
 {
 content: "Information about me!";
@@ -147,17 +158,23 @@ bottom: -35px;
 left: 50%;
 padding: 5px;
 color: #9d8df1;
+height: 20px;
 font-size: 20px;
-background: #F9F9F9;
+background: none;
 transform: translateX(-50%);
 }
-.about .title
+
+.about .about-content
+ {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -60px;
+}
+.about .about-content .left
 {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight : 400;
-    font-family: 'Ubuntu', sans-serif;
+width: 45%
 }
 .about .about-content .left img
 { 
@@ -167,11 +184,55 @@ transform: translateX(-50%);
     border: 5px solid #9d8df1;
     border-radius: 6px;
 }
-
-@media (max-width: 1104px)
+.about .about-content .right
+{
+width: 55%
+}
+.about .about-content .right .text
+{
+font-size: 25px;
+font-weight: 375;
+margin-bottom: 10px;
+}
+.about .about-content .right .text span
+{
+    color: #9d8df1;
+}
+.about .about-content .right p
+{
+text-align: justify;
+}
+.about .about-content .right a
+{
+    display : inline-block;
+    background :  #9d8df1;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 30px; 
+    font-weight: 50;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #9d8df1;
+    transition: all 0.4s ease;
+}
+.about .about-content .right a:hover
+{
+    color: #9d8df1;
+    background:none;
+}
+@media (max-width: 1300px)
 {
     .home .max-width{
         margin-left: 0px;
+    }
+}
+@media (max-width: 1104px)
+{
+    .about .about-content .left img
+    { 
+        height: 350px;
+        width: 350px;
+        
     }
 }
 @media (max-width: 991px)
@@ -182,8 +243,6 @@ transform: translateX(-50%);
 }
 @media (max-width: 947px)
 {
-
-    
     .menu-btn
     {
     display: block;
@@ -239,7 +298,23 @@ transform: translateX(-50%);
         font-size: 23px;
         padding: 10px 30px;
     }
-
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column
+    {
+        width: 100%;
+    }
+    .about .about-content .left
+    {
+       display: flex;
+       justify-content: center;
+       margin: 0 auto 60px;
+    }
+    .about .about-content .right
+    {
+        flex: 100%;
+    }
 }
 @media (max-width: 690px)
 {
