@@ -61,7 +61,7 @@ font-weight: 600;
 /* menu btn styling */
 .menu-btn
 {
-color: #fff;
+color: #9d8df1;
 font-size: 23px;
 cursor : pointer;
 display: none;
@@ -214,12 +214,15 @@ text-align: justify;
     border-radius: 6px;
     border: 2px solid #9d8df1;
     transition: all 0.4s ease;
+    text-align : justify;
 }
 .about .about-content .right a:hover
 {
     color: #9d8df1;
     background:none;
 }
+
+/* responsive media */
 @media (max-width: 1300px)
 {
     .home .max-width{
@@ -232,7 +235,6 @@ text-align: justify;
     { 
         height: 350px;
         width: 350px;
-        
     }
 }
 @media (max-width: 991px)
@@ -284,9 +286,7 @@ text-align: justify;
     }
     .home .home-content .text-2
     {
-        font-size: 70px;
-       
-        
+        font-size: 70px; 
     }
     .home .home-content .text-3
     {
@@ -316,6 +316,12 @@ text-align: justify;
         flex: 100%;
     }
 }
+@media screen and (max-width: 768px){
+    .about .about-content{
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 690px)
 {
     .max-width{
