@@ -119,16 +119,11 @@ margin: auto 0 auto 40px;
     color: #9d8df1;
     background:none;
 }
-/*about section */
+/* similar code */
 section{
     padding: 100px 0;
 }
-.about
-{
-font-family: 'Roboto', sans-serif;
-background: #F9F9F9
-}
-.about .title
+section .title
 {
     position: relative;
     text-align: center;
@@ -138,7 +133,7 @@ background: #F9F9F9
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before
+section .title::before
 {
 content: "";
 position: absolute;
@@ -150,9 +145,8 @@ background: #111;
 transform: translateX(-50%);
 }
 
-.about .title::after
+section title::after
 {
-content: "Information about me!";
 position: absolute;
 bottom: -35px;
 left: 50%;
@@ -163,8 +157,16 @@ font-size: 20px;
 background: none;
 transform: translateX(-50%);
 }
+/*about section */
 
-.about .about-content
+.about, .services
+{
+font-family: 'Roboto', sans-serif;
+background: #F9F9F9;
+}
+
+
+.about .about-content, .services .serv-content
  {
     display: flex;
     flex-wrap: wrap;
@@ -222,6 +224,14 @@ text-align: justify;
     background:none;
 }
 
+/* SERVICES section styling */
+.services
+{
+    color: #111;
+    background: #f4f1fd;
+}
+
+
 /* responsive media */
 @media (max-width: 1300px)
 {
@@ -237,6 +247,7 @@ text-align: justify;
         width: 350px;
     }
 }
+
 @media (max-width: 991px)
 {
 .max-width{
