@@ -132,6 +132,7 @@ section .title
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    margin-left: -60px;
 }
 section .title::before
 {
@@ -232,12 +233,44 @@ text-align: justify;
 }
 .services .serv-content .card
 {
-    width: calc(33% - 20px);
+    width: calc(33%);
     background: none;
     text-align: center;
     border-radius: 6px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: all 0.5 ease;
 }
+.services .serv-content .card i
+{
+    font-size: 50px;
+    background:#f4f1fd;
+}
+.services .serv-content .card .text
+{
+font-size: 20px;
+font-weight: 300;
+margin: 15px 0 7px 0;
 
+}
+.services .serv-content .card .box
+{
+    transition: all 0.5 ease;
+}
+.services .serv-content .card:hover
+{
+    background: #c3b4f0;
+}
+.services .serv-content .card:hover i
+{
+    font-size: 50px;
+    color: #c3b4f0;
+    transition: color 0.5 ease;
+}
+.services .serv-content .card:hover .box
+{
+    transform: scale(1.05);
+}
 /* responsive media */
 @media (max-width: 1300px)
 {
@@ -253,7 +286,15 @@ text-align: justify;
         width: 350px;
     }
 }
+/* crazy code */
+html{
+    scroll-snap-type: y mandatory;
+  }
+  section{
+    scroll-snap-align: start;
+  }
 
+  /*53:43*/
 @media (max-width: 991px)
 {
 .max-width{
@@ -332,6 +373,11 @@ text-align: justify;
     {
         flex: 100%;
     }
+    .services .serv-content .card
+    {
+        width: calc(50% -10px);
+        margin-bottom: 20px;
+    }
 }
 @media screen and (max-width: 768px){
     .about .about-content{
@@ -359,6 +405,11 @@ text-align: justify;
     {
         font-size: 20px;
         padding: 8px 20px;
+    }
+    .services .serv-content .card
+    {
+        width: 100%;
+        
     }
 }
 
