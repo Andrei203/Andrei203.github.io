@@ -230,7 +230,13 @@ text-align: justify;
     color: #111;
     background: #f4f1fd;
 }
-
+.services .serv-content .card
+{
+    width: calc(33% - 20px);
+    background: none;
+    text-align: center;
+    border-radius: 6px;
+}
 
 /* responsive media */
 @media (max-width: 1300px)
