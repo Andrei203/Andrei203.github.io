@@ -173,7 +173,7 @@ background: #F9F9F9;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: -60px;
+   
 }
 .about .about-content .left
 {
@@ -381,7 +381,7 @@ html{
 }
 @media screen and (max-width: 768px){
     .about .about-content{
-        margin-left: 0;
+        margin-left: -0;
     }
 }
 
