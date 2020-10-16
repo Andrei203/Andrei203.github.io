@@ -297,7 +297,51 @@ margin: 15px 0 7px 0;
     align-items: center;
     justify-content: space-between;
 }
+.skills .skills-content .right span
+{
+    font-weight: 500;
+    font-size: 18px;
 
+}
+.skills .skills-content .right .line
+{
+    height: 5px;
+    width: 100%;
+    background :#c4c4c4;
+    position: relative;
+}
+.skills .skills-content .right .line::before
+{
+    content:"";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #9d8df1
+}
+.skills .skills-content .right .info
+{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left p
+{
+    text-align: justify;
+}
+.skills-content .right .html::before
+{
+    width: 40%;
+}
+.skills-content .right .cpp::before
+{
+    width: 90%;
+}
+.skills-content .right .csharp::before
+{
+    width: 60%;
+}
 /* responsive media */
 @media (max-width: 1300px)
 {
@@ -402,8 +446,12 @@ html{
     }
     .services .serv-content .card
     {
-        width: calc(50% -10px);
+        width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column
+    {
+        margin-bottom: 35px;
     }
 }
 @media screen and (max-width: 768px){
