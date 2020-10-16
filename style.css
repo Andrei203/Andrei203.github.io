@@ -278,13 +278,24 @@ margin: 15px 0 7px 0;
 }
 .skills .skills-content .column
 {
-    width:calc(50%-30px);
+    width:calc(50% - 30px);
 }   
 .skills .skills-content .left .text
 {
     font-size: 20px;
     font-weight :400;
     margin-bottom:10px;
+}
+.skills .skills-content .right .bars
+{
+    margin-bottom: 15px;
+
+}
+.skills .skills-content .right .info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* responsive media */
