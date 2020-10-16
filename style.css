@@ -452,6 +452,7 @@ html{
     .skills .skills-content .column
     {
         margin-bottom: 35px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){
