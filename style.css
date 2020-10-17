@@ -177,13 +177,13 @@ background: none;
 transform: translateX(-50%);
 }
 
-.about, .services, .skills
+.about, .services, .skills, .contact
 {
 font-family: 'Roboto', sans-serif;
-background: #F9F9F9;
+background: #fef6ff;
 }
 
-.about .about-content, .services .serv-content, .skills .skills-content
+.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content
  {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +191,7 @@ background: #F9F9F9;
     justify-content: space-between;
    
 }
+
 /*about section */
 
 .about .about-content .left
@@ -360,6 +361,35 @@ margin: 15px 0 7px 0;
 .skills-content .right .csharp::before
 {
     width: 60%;
+}
+/* contact me section */
+.contact .title::after
+{
+    content: "";
+}
+.contact .contact-content .column
+{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+.contact .contact-content .left p
+{
+text-align: justify;
+}
+.contact .contact-content .left .icons
+{
+    margin: 10px 0;
+}
+.contact .contact-content .row
+{
+    display : flex;
+    height: 65px;
+    align-items: center;
 }
 /* responsive media */
 @media (max-width: 1300px)
