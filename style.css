@@ -71,14 +71,31 @@ display: none;
 .home
 {
     display: flex;
-    background: #F9F9F9;
     background-size:cover;
     background-attachment: fixed;
     height : 100vh;
     color: #000000;
     min-height: 500px;
     font-family: 'Roboto', sans-serif;
-}
+      background: linear-gradient(-45deg, #ffd1d1, #f9cdff, #a4ffe1, #78dfff);
+      background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
 .home .max-width
 {
 margin: auto 0 auto 40px;
