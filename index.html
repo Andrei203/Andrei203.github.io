@@ -9,15 +9,18 @@
         <script src= "https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
     <body>
+        <div class = "scroll-up-btn">
+            <i class = "fas fa-angle-up"></i>
+        </div>
         <nav class= "navbar">
             <div class = "max-width">
                 <div class ="logo"><a href = "#">Portfo<span>lio.</span></a></div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About </a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact me</a></li>
-                    <li><a href="#">Work & Group Work</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#work">Work & Group Work</a></li>
                 </ul>
                 <div class="menu-btn">
                     <i class = "fas fa-bars"></i>
@@ -32,7 +35,7 @@
                     <div class = "text-1">Hello, my name is </div>
                     <div class = "text-2">Andrei </div>
                     <div class = "text-3">and I am a <span>Game Developer</span> </div>
-                    <a href = "#">Contact Me</a>
+                    <a href = "#contact">Contact Me</a>
                 </div>
             
             </div>
@@ -50,7 +53,7 @@
                  <div class="column right">
                      <div class="text">Hello I'm Andrei and I'm a <span>Programmer</span></div>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam expedita tempore, dolores voluptate ut beatae fugiat, excepturi voluptas consequatur eligendi dicta labore quidem consectetur vel ipsam, laborum esse quod tempora. Molestiae recusandae minima accusamus! Alias deleniti facilis vitae autem amet perferendis, reiciendis, hic non vero, quaerat velit pariatur aperiam. Pariatur, veniam assumenda? Exercitationem animi necessitatibus saepe numquam voluptas voluptates tenetur?</p>
-                    <a href= "#" >Download CV</a>
+                    <a href= "files/CV.pdf" download >Download CV</a>
                     </div>
                 </div>
             </div>
@@ -117,22 +120,23 @@
                     </div>
          </div>
          <!--contact me section-->
-         <section class = "contact" id="contact">
-             <div class="max-width">
-                 <h2 class="title">Contact Me</h2>
+         <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
                 <div class="contact-content">
-                     <div class="column left"></div>
-                     <div class="text">Get In Touch with Me!
-                         <p>    </p>
-                         <div class ="icons">
-                             <div class="row">
-                                 <i class="fas fa-user"></i>
-                                 <div class="info">
-                                     <div class="head">Name</div>
-                                     <div class="sub-title">Andrei Barlea</div>
-                                 </div>
-                             </div>
-                             <div class="row">
+                    <div class="column left">
+                        <div class="text">Get In Touch with Me!
+                            <p> </p>
+                        </div>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Andrei Barlea</div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
                                     <div class="head">Address</div>
@@ -143,36 +147,39 @@
                                     <div class="info">
                                         <div class="head">Email</div>
                                         <div class="sub-title">bandrei235@outlook.com</div>
-                                 </div>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                     </div>
-                     <div class="column right">
-                         <div class="text">Message Me!
-                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et harum provident, voluptatem modi maxime!</p>
-                         </div>
-                         <form action = "#">
-                             <div class = "fields">
-                                 <div class="field name">
-                                     <input type = "text" placeholder="Name" required>
-                                 </div>
-                                 <div class="field email">
-                                    <input type = "email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message Me!
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et harum provident,
+                                voluptatem modi maxime!</p>
+                        </div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
                                 </div>
-                             </div>     <div class="field">
-                                    <input type = "text" placeholder="Subject" required>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
                                 </div>
-                                <div class="field textarea">
-                                    <textarea cols="30" rows="10" placeholder="Enter message. " required></textarea>
-                                </div>
-                                <div class = "button">
-                                    <button type = "submit"> Submit</button>
-                                </div>
-                         </form>
-                     </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Enter message. " required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit"> Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-             </div>
-         </section>
+            </div>
+        </section>
         <script src= "script.js"></script>
         </body>
     </html>
