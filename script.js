@@ -9,7 +9,19 @@ $(document).ready(function()
         {
             $('.navbar').removeClass("sticky");
         }
-    })
+        if(this.scroll > 500)
+        {
+            $('.scroll-up-btn').addClass("show");
+        }else
+        {
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+    //slide up scrip
+    $('.scroll-up-btn').click(function()
+    {
+        $('html').animate({scrollTop: 0});
+    });
     //menu toggle / navbar
     $('.menu-btn').click(function()
     {

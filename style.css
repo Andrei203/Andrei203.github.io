@@ -76,13 +76,23 @@ display: none;
     height: 45px;
     width: 42px;
     right: 30px;
-    bottom: 30px;
+    bottom: 10px;
     background: #9d8df1;
     text-align : center;
     line-height: 45px;   
     color: #fff;
     z-index: 9999;
     font-size: 30px;
+    border-radius: 6px;
+    cursor:pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3 ease;
+}
+.scroll-up-btn.show
+{
+    opacity: 1;
+    pointer-events: auto;
 }
 /* home section styling */
 .home
@@ -509,7 +519,6 @@ display : flex;
     { 
         height: 350px;
         width: 350px;
-        
     }
 }
 /* crazy code */
@@ -520,6 +529,14 @@ display : flex;
     scroll-snap-align: start;
   }
 */
+@media (max-width: 947px)
+{
+.contact .contact-content .column
+{
+margin-bottom: 35px;
+width: 100%;
+}
+
 
 @media (max-width: 991px)
 {
