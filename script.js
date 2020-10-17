@@ -9,7 +9,7 @@ $(document).ready(function()
         {
             $('.navbar').removeClass("sticky");
         }
-        if(this.scroll > 500)
+        if(this.scroll > 150)
         {
             $('.scroll-up-btn').addClass("show");
         }else

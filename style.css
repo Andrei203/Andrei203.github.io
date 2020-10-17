@@ -537,6 +537,13 @@ margin-bottom: 35px;
 width: 100%;
 }
 
+@media (max-width: 947px)
+{
+.services .services-content .column
+{
+margin-bottom: 35px;
+width: 100%;
+}
 
 @media (max-width: 991px)
 {
