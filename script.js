@@ -5,14 +5,16 @@ $(document).ready(function()
         if(this.scrollY > 20)
         {
             $('.navbar').addClass("sticky");
-        } else
+        } 
+        else
         {
             $('.navbar').removeClass("sticky");
         }
         if(this.scroll > 150)
         {
             $('.scroll-up-btn').addClass("show");
-        }else
+        } 
+        else
         {
             $('.scroll-up-btn').removeClass("show");
         }
