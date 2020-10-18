@@ -90,7 +90,7 @@ display: none;
 }
 .scroll-up-btn.show
 {
-  
+    opacity: 0;
     bottom:30px;
     pointer-events: auto;
 }

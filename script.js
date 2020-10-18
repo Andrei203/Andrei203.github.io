@@ -12,11 +12,11 @@ $(document).ready(function()
         }
         if(this.scroll > 150)
         {
-            $('.scroll-up-btn').addClass("show");
+            $('.scroll-up-btn').addClass("scroll-up-btn.show");
         } 
         else
         {
-            $('.scroll-up-btn').removeClass("show");
+            $('.scroll-up-btn').removeClass("scroll-up-btn.show");
         }
     });
     //slide up scrip
@@ -30,4 +30,5 @@ $(document).ready(function()
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     })
+    
 });
