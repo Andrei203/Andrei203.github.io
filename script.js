@@ -26,12 +26,18 @@ $(document).ready(function()
     {
         $('html').animate({scrollTop: 0});
     });
-    //menu toggle / navbar
-    $('.menu-btn').click(function()
-    {
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    })
+  //menu toggle / navbar
+  $('.menu-btn').click(function()
+  {
+      $('.navbar .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
+
+  });
+
+  $('.menu li a').click(function(){
+      $('.navbar .menu').removeClass('active');
+      $('.menu-btn i').toggleClass("active");
+  });
     
 
     $(function(){
