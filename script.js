@@ -1,7 +1,9 @@
 $(document).ready(function()
 {
+    $('.scroll-up-btn').hide();
     $(window).scroll(function()
     {
+
         if(this.scrollY > 20)
         {
             $('.navbar').addClass("sticky");
@@ -10,13 +12,13 @@ $(document).ready(function()
         {
             $('.navbar').removeClass("sticky");
         }
-        if(this.scroll > 150)
+        if(this.scrollY > 150)
         {
-            $('.scroll-up-btn').addClass("scroll-up-btn.show");
+            $('.scroll-up-btn').fadeIn(200);
         } 
         else
         {
-            $('.scroll-up-btn').removeClass("scroll-up-btn.show");
+            $('.scroll-up-btn').fadeOut(500);
         }
     });
     //slide up scrip
@@ -30,10 +32,17 @@ $(document).ready(function()
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     })
+    
+
     $(function(){
         $('form').submit(function(e){
             e.preventDefault();
-            fetch('https://pacific-mesa-79068.herokuapp.com?' + $('form').serialize(), {mode: 'no-cors'});
+            fetch('https://pacific-mesa-79068.herokuapp.com/?' + $('form').serialize(), {mode: 'no-cors'});
+            $('#submit').prop('disabled', true);
+            setTimeout(function(){
+                $('#submit').prop('disabled', false);
+            }, 10000);
+            
         });
     });
 });

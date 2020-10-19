@@ -87,11 +87,10 @@ display: none;
     border-radius: 6px;
     cursor: pointer;
     opacity: 1;
-    transition: all 0.3s ease;
 }
 .scroll-up-btn.show
 {
-    opacity: 0;
+    opacity: 1;
     bottom:30px;
     pointer-events: auto;
 }
@@ -178,7 +177,6 @@ section .title
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
-    margin-left: -60px;
 }
 section .title::before
 {
@@ -311,7 +309,8 @@ margin: 15px 0 7px 0;
 .services .serv-content .card:hover i
 {
     font-size: 50px;
-    color: #c3b4f0;
+    color: #000;
+    background: #c3b4f0;
     transition: color 0.5 ease;
 }
 .services .serv-content .card:hover .box
@@ -427,8 +426,10 @@ text-align: justify;
 }
 .contact .contact-content .row i
 {
+    width: 25px;
     font-size: 25px;
     color: #9d8df1;
+    margin-left: 20px;
 }
 .contact .contact-content .info .head
 {
@@ -487,6 +488,7 @@ display : flex;
 {
     height: 47px;
     width: 170px;
+    cursor: pointer;
 }
 
 .contact .right form .button button
@@ -501,11 +503,24 @@ display : flex;
     color: #fff;
     transition: all 0.3s ease;
 }
+
+.contact .right form .button button:disabled
+{
+    
+    opacity: 0.4;
+}
+
+.contact .right form .button button:disabled:hover
+{
+    color: #fff;
+    background: #9d8df1;
+    opacity: 0.4;
+}
+
 .contact .right form .button button:hover
 {
     color: #9d8df1;
     background : none;
-   
 }
 /* responsive media */
 @media (max-width: 1300px)
@@ -518,8 +533,8 @@ display : flex;
 {
     .about .about-content .left img
     { 
-        height: 350px;
-        width: 350px;
+        height: auto;
+        width: 100%;
     }
 }
 /* crazy code */
