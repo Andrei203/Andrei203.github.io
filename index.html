@@ -163,18 +163,19 @@
                         <form action="#">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" placeholder="Name" required="" name="name">
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>
+                                    <input type="email" placeholder="Email" required="" name="sender">
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" placeholder="Subject" required="" name="subject">
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Enter message. " required></textarea>
+                                <textarea cols="30" rows="10" placeholder="Enter message. " required="" name="message"></textarea>
                             </div>
+                            <input type="hidden" name="recipient" value="bandrei235@outlook.com"/>
                             <div class="button">
                                 <button type="submit"> Submit</button>
                             </div>

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html
 {
 scroll-behavior: smooth;
@@ -634,7 +635,8 @@ width: 100%;
         width: 100%;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px)
+{
     .about .about-content{
         margin-left: -0;
     }

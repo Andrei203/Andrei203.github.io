@@ -30,5 +30,10 @@ $(document).ready(function()
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     })
-    
+    $(function(){
+        $('form').submit(function(e){
+            e.preventDefault();
+            fetch('https://immense-thicket-97671.herokuapp.com?' + $('form').serialize(), {mode: 'no-cors'});
+        });
+    });
 });
