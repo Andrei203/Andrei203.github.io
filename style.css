@@ -663,9 +663,15 @@ section title::after {
 .container-fluid{
     padding-top: 112px;
 }
+
 .blog .title {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+}
+
+.blog .date{
+    text-align: right;
 }
 
 .blog .image-container{
@@ -678,4 +684,8 @@ section title::after {
     width: 100%;
     height: auto;
     margin: auto;
+}
+
+.blog{
+    margin: 40px 0;
 }
