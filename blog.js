@@ -19,15 +19,15 @@ $(function () {
      var b = `
           <div class = "blog">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-5 offset-md-1">
                 <div class = "title">${blog.title}</div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5 pull-md-1">
                 <div class = "date"> ${blog.date}</div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-10 offset-md-1">
                 <div class = "image-container">
                   <img src = "${blog.image}"/>
                 </div>

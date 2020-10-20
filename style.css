@@ -667,7 +667,7 @@ section title::after {
 .blog .title {
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .blog .date{
@@ -675,7 +675,6 @@ section title::after {
 }
 
 .blog .image-container{
-    width: 80%;
     margin: auto;
     height: auto;
 }
